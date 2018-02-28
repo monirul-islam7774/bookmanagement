@@ -71,7 +71,7 @@
             success: function (datas) {
              rows='';
                 $.each(datas, function (key, data) {
-                    var today = new Date(data.created_at);
+                    var today = new Date(data.published);
                    rows=rows+'  <tr>\n' +
                        '<td>'+name+'</td>\n' +
                        '<td>'+data.book_name+'</td>\n' +
